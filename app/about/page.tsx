@@ -24,7 +24,7 @@ const TestimonialCard = ({ quote, author }: { quote: string; author: string }) =
 export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      {/* <Header /> */}
       
       <main className="flex-grow">
         {/* Hero Section */}
@@ -122,7 +122,7 @@ export default function AboutPage() {
         </section>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 } 

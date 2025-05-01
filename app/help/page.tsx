@@ -52,7 +52,7 @@ const ContactInfoCard = ({
 export default function HelpPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      {/* <Header /> */}
       
       <main className="flex-grow">
         {/* Hero Section */}
@@ -173,7 +173,7 @@ export default function HelpPage() {
         </section>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 } 

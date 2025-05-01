@@ -40,7 +40,7 @@ const ProductCard = ({
 export default function MerchPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      {/* <Header /> */}
       
       <main className="flex-grow">
         {/* Hero Section */}
@@ -89,7 +89,7 @@ export default function MerchPage() {
         </section>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 } 
