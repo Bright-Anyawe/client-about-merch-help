@@ -2,6 +2,8 @@
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Image from "next/image"
+
 
 const ProductCard = ({ 
   name, 
@@ -16,11 +18,14 @@ const ProductCard = ({
 }) => (
   <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
     <div className="relative">
-      <img 
+      <Image  src={imageUrl} 
+        alt={name} 
+        className="w-full h-64 object-cover"/>
+      {/* <img 
         src={imageUrl} 
         alt={name} 
         className="w-full h-64 object-cover"
-      />
+      /> */}
       <div className="absolute top-2 right-2 bg-yellow-500 text-white px-2 py-1 rounded-full text-sm">
         {rating.toFixed(1)} ★
       </div>

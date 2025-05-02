@@ -2,10 +2,12 @@
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Image from 'next/image';
 
 const TeamMemberCard = ({ name, role, imageUrl }: { name: string; role: string; imageUrl: string }) => (
   <div className="bg-white rounded-lg shadow-md overflow-hidden">
-    <img src={imageUrl} alt={name} className="w-full h-64 object-cover" />
+    <Image src={imageUrl} alt={name} className="w-full h-64 object-cover"  />
+    {/* <img src={imageUrl} alt={name} className="w-full h-64 object-cover" /> */}
     <div className="p-4">
       <h3 className="text-xl font-semibold">{name}</h3>
       <p className="text-gray-600">{role}</p>
@@ -15,7 +17,7 @@ const TeamMemberCard = ({ name, role, imageUrl }: { name: string; role: string; 
 
 const TestimonialCard = ({ quote, author }: { quote: string; author: string }) => (
   <div className="bg-white p-6 rounded-lg shadow-md">
-    <div className="text-gray-400 mb-4 text-4xl">"</div>
+    <div className="text-gray-400 mb-4 text-4xl">&quot;</div>
     <p className="text-gray-700 mb-4">{quote}</p>
     <p className="text-gray-900 font-semibold">{author}</p>
   </div>

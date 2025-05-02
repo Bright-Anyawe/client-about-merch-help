@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
 const FAQItem = ({ 
   question, 
   answer 
@@ -60,7 +59,7 @@ export default function HelpPage() {
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold text-center mb-8">Help & Contact Us</h1>
             <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
-              We're here to help! Find answers to common questions or get in touch with our team.
+              We&apos;re here to help! Find answers to common questions or get in touch with our team.
             </p>
           </div>
         </section>
